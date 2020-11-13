@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'sh \'mvn -DskipTests clean package\''
+        sh 'mvn -DskipTests clean package'
       }
     }
 
